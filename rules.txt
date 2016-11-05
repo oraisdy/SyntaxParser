@@ -1,0 +1,9 @@
+S -> identifier assignmentOperator E ;
+S -> if ( C ) S else S
+S -> while ( C ) { S }
+E -> F T
+T -> arithmeticOperator F T
+T -> ε
+F -> integer
+F -> identifier
+C -> identifier relationalOperator integer
