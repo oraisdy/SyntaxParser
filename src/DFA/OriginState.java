@@ -17,6 +17,7 @@ public class OriginState implements State {
                 case exclamation:return States.G;
                 case slash:return States.H;
                 case quote:return States.I;
+                case star:return FinalState.arithmeticOperator;
             }
         }
         return FinalState.accept;

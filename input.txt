@@ -1,8 +1,6 @@
-int c=100;
-while(c>0){
-    if(v!=0)
+while(c!=0){
+    if(v==0)
         u=v;
-    else if(v==0)
-        u=u-u/v*v;
-    c-=1;
+    else
+        u=u-u*v*v;
 }
